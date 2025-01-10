@@ -2,12 +2,12 @@
 <package>
   <metadata>
     <id>AppTour</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <authors>Monil Gandhi</authors>
     <owners>Monil Gcleandhi</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A MAUI AppTour implementation to guide users through app features.</description>
-    <repository type="git" url="https://github.com/gandhimonil/AppTour" />
+    <repository type="git" url="https://github.com/gandhimonil/AppTour.git" />
     <readme>README.md</readme>
     <copyright>Copyright © 2025 Monil Gandhi</copyright>
     <tags>MAUI;AppTour;CoachMark,AppGuide</tags>
