@@ -1,14 +1,14 @@
-﻿<?xml version="1.0"?>
-<package>
+﻿<?xml version="1.0"? encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>AppTour</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>Monil Gandhi</authors>
-    <owners>Monil Gcleandhi</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A MAUI AppTour implementation to guide users through app features.</description>
-    <repository type="git" url="https://github.com/gandhimonil/AppTour.git" />
     <readme>README.md</readme>
+    <projectUrl>https://github.com/gandhimonil/AppTour</projectUrl>
+    <license type="expression">MIT</license>
     <copyright>Copyright © 2025 Monil Gandhi</copyright>
     <tags>MAUI;AppTour;CoachMark,AppGuide</tags>
     <dependencies>

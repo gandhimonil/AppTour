@@ -3,6 +3,13 @@
 
 `AppTour` gives developers a fast and easy way to implement and guide users through app features.
 
+## Platforms supported
+
+|Platform|Version|
+|-------------------|:------------------:|
+|.Net MAUI Android|API 21+|
+|.Net MAUI iOS|iOS 11.0+|
+
 ## Installation
 `AppTour` is available via NuGet, grab the latest package and install it in your solution:
 
