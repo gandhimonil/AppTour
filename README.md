@@ -46,3 +46,39 @@ The app tours interface includes several buttons with specific functionalities:
 
 ## App Tour Reset Behavior
 - This is device-specific. Once a user installs the app and completes the App Tour. The App Tour will only reset if the user uninstalls and reinstalls the app or clears the app's cache from the device settings.
+
+## API Usage
+
+You must add this namespace to your `xaml` files:
+```csharp
+xmlns:local="clr-namespace:AppTour;assembly=AppTour"
+```
+Now you can use the `AppTour` from this namespace:
+```csharp
+ <local:AppTour x:Name="AppTourControl" />
+```
+Add below lines `.cs` file:
+```csharp
+var steps = new List<CoachMark>
+{
+    new CoachMark { Title = "Step 1", Description = "This is the first step.", TargetView = "btn1" },
+    new CoachMark { Title = "Step 2", Description = "This is the second step.", TargetView = "frame1" }
+};
+
+AppTourControl.Steps = steps;
+AppTourControl.Start("IntroTour");
+```
+Please note that if you want to display the tour guide on multiple screens, you need to pass different strings to the Start method for each screen.
+
+For example:
+
+If you have two screens, Login and Dashboard, you should add `AppTourControl.Start("Login")` in the Login screen and `AppTourControl.Start("Dashboard")` in the Dashboard screen.
+
+Additionally, in the `TargetView`, provide the `x:Name` of the view from the `XML` on which you want to display the app tour.
+
+## Known Limitation
+Currently, it's not possible to display an app tour on individual items in a ListView or CollectionView.
+
+For example:
+
+if you have a list of users with details such as age, name, and contact number, you cannot show an app tour for specific items like "age," "name," or "contact number" because the item’s properties (e.g., x:name) cannot be accessed directly from the list in this manner.
