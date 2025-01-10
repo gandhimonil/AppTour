@@ -1,4 +1,20 @@
 # AppTour
+[![NuGet](https://img.shields.io/nuget/v/AppTour.svg?label=NuGet)](https://www.nuget.org/packages/AppTour/)
+
+`AppTour` gives developers a fast and easy way to implement and guide users through app features.
+
+## Installation
+`AppTour` is available via NuGet, grab the latest package and install it in your solution:
+
+    Install-Package AppTour
+
+In your `MauiProgram` class add the following using statement:
+
+```csharp
+using AppTour;
+```
+
+# AppTour
 This repository contains details of the implementation and functionality of app tours within the application. App tours are integrated across various modules to assist users, especially during first-time login or when encountering new features.
 
 ## Buttons and it's Functionality
